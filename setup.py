@@ -12,18 +12,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
-
-import pkg_resources
 from setuptools import setup, find_packages
 
 
 setup(
     name="sonata",
-    py_modules=["sonata"],
     version="1.0",
     description="",
     author="Xiaoyang Wu",
     packages=find_packages(exclude=["demo*"]),
     include_package_data=True,
+    python_requires=">=3.10",
+    install_requires=[
+        "addict",
+        "huggingface_hub",
+        "numpy<=1.26.4",
+        "packaging",
+        "scipy",
+        "timm",
+        "torch",
+        "psutil",
+    ],
 )

@@ -47,8 +47,8 @@ This repo provide two ways of installation: **standalone mode** and **package mo
   pip install git+https://github.com/Dao-AILab/flash-attention.git
   pip install huggingface_hub timm
 
-  # (optional, or directly copy the sonata folder to your project)
-  python setup.py install
+  # install sonata directly from this fork (mavleo96/sonata)
+  pip install git+ssh://git@github.com/mavleo96/sonata.git
   ```
   Additionally, for running our **demo code**, the following packages are also required:
   ```bash
